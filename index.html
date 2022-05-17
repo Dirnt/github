@@ -1,4 +1,139 @@
-<html <body>
-<<h1>Here is a page.</h1>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>2 Column Layout &mdash; Left Menu with Header &amp; Footer</title>
+        <style type="text/css">
 
-</body>
+            body {
+                margin:0;
+                padding:0;
+                font-family: Sans-Serif;
+                line-height: 1.5em;
+            }
+
+            #header {
+                background: #ccc;
+                height: 100px;
+            }
+
+            #header h1 {
+                margin: 0;
+                padding-top: 15px;
+            }
+
+            main {
+                padding-bottom: 10010px;
+                margin-bottom: -10000px;
+                float: left;
+                width: 100%;
+            }
+
+            #nav {
+                padding-bottom: 10010px;
+                margin-bottom: -10000px;
+                float: left;
+                width: 230px;
+                margin-left: -100%;
+                background: #eee;
+            }
+
+            #footer {
+                clear: left;
+                width: 100%;
+                background: #ccc;
+                text-align: center;
+                padding: 4px 0;
+            }
+
+            #wrapper {
+                overflow: hidden;
+            }
+
+            #content {
+                margin-left: 230px; /* Same as 'nav' width */
+            }
+
+            .innertube {
+                margin: 15px; /* Padding for content */
+                margin-top: 0;
+            }
+
+            p {
+                color: #555;
+            }
+
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul a {
+                color: darkgreen;
+                text-decoration: none;
+            }
+
+        </style>
+
+
+
+    </head>
+
+    <body>
+​
+        <header id="header">
+            <div class="innertube">
+                <h1>Welcome To My Page!</h1>
+            </div>
+        </header>
+
+        <div id="wrapper">
+
+            <main>
+                <div id="content">
+                    <div class="innertube">
+                        <h1>About Me...</h1>
+                        <p><script>generateText(20)</script></p>
+                    </div>
+                </div>
+            </main>
+
+            <nav id="nav">
+                <div class="innertube">
+                    <h3>Kevin Andersson</h3>
+                    <ul>
+                        <li><a href="#">Language</a></li>
+                        <li><a href="#">Swedish 5/5</a></li>
+                        <li><a href="#">English 4/5</a></li>
+
+
+                    </ul>
+                    <h3>Personal Information</h3>
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Kevin Jimmy Andersson</a></li>
+                        <li><a href="#">Birthdate 2001-04-17</a></li>
+                        <li><a href="#">Gender: Man/Male</a></li>
+                        <li><a href="#">Nationality Swedish</a></li>
+                    </ul>
+                    <h3>Contact Information</h3>
+                    <ul>
+                        <li><a href="#">Gävle</a></li>
+                        <li><a href="#">Phone: 070-326 04 17</a></li>
+                        <li><a href="#">Email:</a></li>
+                        <li><a href="#">kevinandersson2009@live.se</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+
+        <footer id="footer">
+            <div class="innertube">
+                <p></p>
+            </div>
+        </footer>
+
+    </body>
+</html>
